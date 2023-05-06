@@ -1,44 +1,38 @@
 [
     {
     "id" : "01",
-    "img" : "",
-    "title" : "",
+    "img" : "https://i.ibb.co/q72w9Vq/blogchain.jpg",
+    "title" : "Blogchain",
     "description" : ""
     },
     {
     "id" : "02",
-    "img" : "",
-    "title" : "",
+    "img" : "https://i.ibb.co/cT0Ftcg/uiux.jpg",
+    "title" : "UI/UX",
     "description" : "" 
     },
     {
     "id" : "03",
-    "img" : "",
-    "title" : "",
+    "img" : "https://i.ibb.co/Kx0zjKT/lot.jpg",
+    "title" : "Internet of Things (IoT)",
     "description" : ""
     },
     {
     "id" : "04",
-    "img" : "",
-    "title" : "",
+    "img" : "https://i.ibb.co/zSCMMXQ/cloud-Computing.jpg",
+    "title" : "Cloud Computing",
     "description" : ""
     },
     {
     "id" : "05",
-    "img" : "",
-    "title" : "",
+    "img" : "https://i.ibb.co/HxDyhrr/devops.jpg",
+    "title" : "DevOps",
     "description" : ""
     },
     {
     "id" : "06",
-    "img" : "",
-    "title" : "",
-    "description" : ""
-    },
-    {
-    "id" : "07",
-    "img" : "",
-    "title" : "",
+    "img" : "https://i.ibb.co/q9ZVJK2/cybersecurity.jpg",
+    "title" : "Cyber Security",
     "description" : ""
     }
 ]
