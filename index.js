@@ -1,11 +1,15 @@
 const express = require('express');
 const app = express();
+const cors = require('cors');
 const port = process.env.PORT || 5000;
+
+// middleware 
+app.use(cors());
 
 const coursesData = require('./data/coursesData.json');
 
 app.get('/', (req, res) => {
-  res.status(200).send('hello from hello tech');
+  res.send('hello from hello tech');
 });
 
 app.get('/coursesData', (req, res) => {
