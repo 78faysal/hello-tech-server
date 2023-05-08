@@ -10,8 +10,8 @@ const coursesData = require('./data/coursesData.json');
 
 
 app.get('/courseDetail/:courseId', (req, res) => {
-  const courseId = parseInt(req.params.courseId);
-  const course = coursesData.map(course => course.id === courseId);
+  const courseId = parseInt(req.params);
+  const course = coursesData.find(course => course.id === courseId);
   console.log(course)
   if(course){
     res.send(course);
