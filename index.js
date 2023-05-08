@@ -8,6 +8,16 @@ app.use(cors());
 
 const coursesData = require('./data/coursesData.json');
 
+
+app.get('/courseDetail/:courseId', (req, res) => {
+  const courseId = parseInt(req.params.courseId);
+  const course = coursesData.map(course => course.id === courseId);
+  console.log(course)
+  if(course){
+    res.send(course);
+  }
+})
+
 app.get('/', (req, res) => {
   res.send('hello from hello tech');
 });
