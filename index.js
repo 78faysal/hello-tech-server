@@ -9,22 +9,25 @@ app.use(cors());
 const coursesData = require('./data/coursesData.json');
 
 
-app.get('/courseDetail/:courseId', (req, res) => {
-  const courseId = parseInt(req.params);
-  const course = coursesData.find(course => course.id === courseId);
-  console.log(course)
-  if(course){
-    res.send(course);
-  }
-})
 
 app.get('/', (req, res) => {
   res.send('hello from hello tech');
 });
 
-app.get('/coursesData', (req, res) => {
+app.get('/courseDetail', (req, res) => {
   res.send(coursesData);
 });
+
+// detail with id 
+app.get('/courseDetail/:courseId', (req, res) => {
+  const courseId = req.params.courseId;
+  const course = coursesData.find(course => course.id === courseId);
+  console.log(course);
+  if(course){
+    res.send(course);
+  }
+});
+
 
 app.listen(port, () => {
   console.log(`listening on port ${port}`);
