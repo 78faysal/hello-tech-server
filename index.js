@@ -20,10 +20,12 @@ app.get('/courseDetail', (req, res) => {
 
 // detail with id 
 app.get('/courseDetail/:courseId', (req, res) => {
-  const courseId = req.params.courseId;
-  const course = coursesData.find(course => course.id === courseId);
-  if(course){
-    res.send(course);
+  try {
+    const courseId = req.params.courseId;
+    const course = coursesData.find(course => course.id === courseId);
+    course ? res.send(course) : res.status(404).send("Course not found");
+  } catch (error) {
+    res.status(500).send("Internal Server Error");
   }
 });
 
