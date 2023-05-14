@@ -22,7 +22,6 @@ app.get('/courseDetail', (req, res) => {
 app.get('/courseDetail/:courseId', (req, res) => {
   const courseId = req.params.courseId;
   const course = coursesData.find(course => course.id === courseId);
-  console.log(course);
   if(course){
     res.send(course);
   }
